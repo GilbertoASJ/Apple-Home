@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    padding: 10px 2%;
+    background-color: #333;
+    text-align: center;
+}
+
+nav.menu ul {
+    display: inline-block;
+}
+
+nav.menu li {
+    display: inline-block;
+    color: white;
+    margin: 0 30px;
+    font-size: 14px;
+}
+
+nav.menu a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+}
+
+nav.menu>a {
+    font-size: 18px;
+}
+
+.fas.fa-search {
+    margin-right: 20px;
+}
+
+section.demo {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+
+section.demo img {
+    display: inline-block;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 50px;
+}
+
+section.demo h1 {
+    margin: 20px 0;
+    font-size: 32px;
+}
+
+.links-compra a {
+    color: #06c;
+    font-size: 19px;
+    margin: 0 15px;
+}
