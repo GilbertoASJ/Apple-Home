@@ -13,6 +13,8 @@ O menu responsivo interage com o HTML e o CSS
 
 Este clone foi feito junto com os tutoriais do canal Danki Code.
 
+<hr>
+
 ### 🔥 Como contribuir
 
 ```
