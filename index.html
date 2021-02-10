@@ -11,14 +11,36 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
     <title>Apple - Home</title>
 </head>
 <body>
     
     <header>
-        <nav class="menu">
-            <a href="#"><i class="fab fa-apple"></i></a>
+
+        <nav class="menu-mobile">
+            <i class="btn-menu fas fa-bars"></i>
+            <a class="btn-close" href="#">X</a>
+            <a href="#" style="font-size: 19px;"><i class="fab fa-apple"></i></a>
+
+            <ul class="items-mobile">
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+        </nav>
+
+        <nav class="menu-desktop">
+            <a href="#">
+                <i class="fab fa-apple"></i>
+            </a>
 
             <ul>
                 <li><a href="#">Mac</a></li>
@@ -45,6 +67,8 @@
 
         <img src="https://f088b146830a59b5.cdn.gocache.net/uploads/noticias/2020/10/13/77227df9864eb1a20cad5f903b154dc4f8e39d28.jpg" alt="Iphone 12">
     </section>
+
+    <script src="./js/scripts.js"></script>
 
 </body>
 </html>
