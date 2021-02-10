@@ -5,6 +5,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+html {
+    overflow-y: hidden;
+}
+
 body {
     background-color: black;
 }
@@ -15,24 +19,24 @@ header {
     text-align: center;
 }
 
-nav.menu ul {
+nav.menu-desktop ul {
     display: inline-block;
 }
 
-nav.menu li {
+nav.menu-desktop li {
     display: inline-block;
     color: white;
     margin: 0 30px;
     font-size: 14px;
 }
 
-nav.menu a {
+nav.menu-desktop a {
     margin: 0 5px;
     text-decoration: none;
     color: white;
 }
 
-nav.menu>a {
+nav.menu-desktop>a {
     font-size: 18px;
 }
 
@@ -62,4 +66,54 @@ section.demo h1 {
     color: #06c;
     font-size: 19px;
     margin: 0 15px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.btn-close {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-menu {
+        cursor: pointer;
+        color: white;
+    }
+
+    .menu-mobile a {
+        color: white;
+    }
+
+    .items-mobile {
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        background-color: black;
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .items-mobile li {
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .items-mobile a {
+        text-decoration: none;
+    }
 }
